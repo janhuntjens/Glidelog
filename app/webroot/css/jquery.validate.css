@@ -1,0 +1,13 @@
+input.error {
+background:#ffeeee;
+}
+
+label.error {
+display: none;
+width:0px;
+height:0px;
+color:#fff;
+position: absolute;
+left:-100px;
+top:-100px;
+}

@@ -28,7 +28,9 @@ a:hover {
 ----------------------------------------------- */
 .container_12,
 .container_16 {
+	width:960px;
 	background:#fff;
+	margin:0 auto;
 }
 
 
@@ -521,3 +523,50 @@ input.search.button {
 #kwick .four {
 	background: #999;
 }
+
+.box {
+border-radius: 7px;
+}
+
+.box h2 {
+border-top-left-radius:7px;
+border-top-right-radius:7px;
+height:18px;
+line-height: 20px;
+}
+
+.box h2 img {
+position: relative;
+top:2px;
+}
+
+.box h2 a {
+color:#888;
+font-weight: normal;
+}
+
+.box h2 a:hover {
+color:#fff;
+}
+
+table td img {
+position:relative;
+top:3px;
+}
+
+td.tablefooter {
+text-align:center;
+background:#fafafa;
+}
+
+	td.tablefooter a {
+	color:#aaa;
+	}
+	
+	td.tablefooter:hover {
+	background:#fff;
+	}
+	
+	td.tablefooter:hover a {
+	color:#333;
+	}

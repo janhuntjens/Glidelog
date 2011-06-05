@@ -14,6 +14,7 @@
 		
 		<script type="text/javascript" language="javascript" src="/js/libs/jquery-1.5.1.min.js"></script>
 		<script type="text/javascript" language="javascript" src="/js/libs/jquery-ui-1.8.13.custom.min.js"></script>
+		<script type="text/javascript" language="javascript" src="/js/libs/jquery.hoverfade.min.js"></script>
 	</head>
 	<body>
 		<div class="container_12">
@@ -29,13 +30,16 @@
 						<a href="/">Dashboard</a>
 					</li>
 					<li>
-						<a href="../12/">Flights</a>
+						<a href="/flights/">Flights</a>
 						<ul>
 							<li>
-								<a href="../12/fluid/jquery/">all flights</a>
+								<a href="/flights/">all flights</a>
 							</li>
 							<li>
 								<a href="../12/fluid/mootools/">statistics</a>
+							</li>
+							<li>
+								<a href="/flights/add/">add flight</a>
 							</li>
 						</ul>
 					</li>
@@ -60,3 +64,9 @@
 			<div class="clear"></div>
 	</body>
 </html>
+
+<script type="text/javascript">
+
+$("").hoverFade();
+
+</script>
