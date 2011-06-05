@@ -24,27 +24,39 @@
 				</h1>
 			</div>
 			<div class="clear"></div>
+			
+			<style>
+			
+			ul.main img {
+			padding-right:1px;
+			position:relative;
+			top:4px;
+			left:-4px;
+			}
+			
+			</style>
+			
 			<div class="grid_12">
 				<ul class="nav main">
 					<li>
-						<a href="/">Dashboard</a>
+						<a href="/"><?= $html->image('icon/basicset/home_16.png'); ?>Dashboard</a>
 					</li>
 					<li>
-						<a href="/flights/">Flights</a>
+						<a href="/flights/"><?= $html->image('icon/basicset/globe_16.png'); ?> Flights</a>
 						<ul>
 							<li>
-								<a href="/flights/">all flights</a>
+								<a href="/flights/"><?= $html->image('icon/basicset/document_16.png'); ?> all flights</a>
 							</li>
 							<li>
-								<a href="/flights/statistics/">statistics</a>
+								<a href="/flights/statistics/"><?= $html->image('icon/basicset/statistics_16.png'); ?> statistics</a>
 							</li>
 							<li>
-								<a href="/flights/add/">add flight</a>
+								<a href="/flights/add/"><?= $html->image('icon/basicset/plus_16.png'); ?>  add flight</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="#">Manage</a>
+						<a href="#"><?= $html->image('icon/basicset/gear_16.png'); ?> Manage</a>
 						<ul>
 							<li>
 								<a href="#">Gliders</a>

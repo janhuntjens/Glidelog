@@ -1,7 +1,11 @@
 <div class="clear" style="height:15px;"></div>
 <div class="grid_12">
 <div class="box">
-<h2>All flights</h2>
+<h2 style="overflow:hidden;">All flights
+<span style="float:right;">
+<?= $html->link($html->image('icon/basicset/document_16.png'),'#',array('escape'=>false)); ?>
+</span>
+</h2>
 
 <table style="margin-top:10px;">
 <thead>
