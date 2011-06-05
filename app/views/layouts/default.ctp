@@ -36,7 +36,7 @@
 								<a href="/flights/">all flights</a>
 							</li>
 							<li>
-								<a href="../12/fluid/mootools/">statistics</a>
+								<a href="/flights/statistics/">statistics</a>
 							</li>
 							<li>
 								<a href="/flights/add/">add flight</a>
@@ -44,16 +44,16 @@
 						</ul>
 					</li>
 					<li>
-						<a href="../12/fixed/">Manage</a>
+						<a href="#">Manage</a>
 						<ul>
 							<li>
-								<a href="../12/fixed/mootools/">Gliders</a>
+								<a href="#">Gliders</a>
 							</li>
 							<li>
-								<a href="../12/fixed/jquery/">Locations</a>
+								<a href="#">Locations</a>
 							</li>
 							<li>
-								<a href="../12/fixed/none/">Flight types</a>
+								<a href="#">Flight types</a>
 							</li>
 						</ul>
 					</li>
