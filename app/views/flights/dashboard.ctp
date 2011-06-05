@@ -59,7 +59,7 @@ foreach($flights as $i => $flight)
 }
 ?>
 <tr>
-<td class="tablefooter" colspan="8" style="height:20px;line-height:20px;"><a href="/flights/all">more</a></td>
+<td class="tablefooter" colspan="8" style="height:20px;line-height:20px;"><a href="/flights/">more</a></td>
 </tr>
 </tbody>
 </table>
