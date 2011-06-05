@@ -8,8 +8,12 @@
 		<link rel="stylesheet" type="text/css" href="/css/grid.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="/css/layout.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="/css/nav.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/css/jquery-ui-smoothness/jquery-ui-1.8.13.custom.css" media="screen" />
 		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css" media="screen" /><![endif]-->
 		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen" /><![endif]-->
+		
+		<script type="text/javascript" language="javascript" src="/js/libs/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" language="javascript" src="/js/libs/jquery-ui-1.8.13.custom.min.js"></script>
 	</head>
 	<body>
 		<div class="container_12">
@@ -22,7 +26,7 @@
 			<div class="grid_12">
 				<ul class="nav main">
 					<li>
-						<a href="../12/">Dashboard</a>
+						<a href="/">Dashboard</a>
 					</li>
 					<li>
 						<a href="../12/">Flights</a>

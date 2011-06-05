@@ -58,19 +58,22 @@ foreach($flights as $i => $flight)
 <h2>Add flight</h2>
 <?php
 
-echo $form->create('Flight');
+echo $form->create('Flight',array('action'=>'dashboard'));
 echo '<fieldset style="margin-top:10px;">';
 ?>
 
 <?php
 echo '<p>';
-echo $form->input('start',array('div'=>false,'type'=>'text'));
+echo $form->input('start',array('class'=>'required','div'=>false,'type'=>'text'));
 echo '</p>';
 echo '<p>';
-echo $form->input('duration',array('div'=>false));
+echo '<label>Duration</label><br />';
+echo $form->input('duration_h',array('class'=>'required','div'=>false,'style'=>'display:inline;width:30px;','label'=>false));
+echo ' ';
+echo $form->input('duration_m',array('class'=>'required','div'=>false,'style'=>'display:inline;width:30px;','label'=>false));
 echo '</p>';
 echo '<p>';
-echo $form->input('glider_id',array('div'=>false,'type'=>'select','options'=>$gliders));
+echo $form->input('glider_id',array('div'=>false,'type'=>'select','options'=>$gliders,'onChange'=>'filterFlighttypes(this.value);'));
 echo '</p>';
 echo '<p>';
 echo $form->input('flighttype_id',array('div'=>false,'type'=>'select','options'=>$flighttypes));
@@ -88,3 +91,22 @@ echo '</fieldset>';
 ?>
 </div>
 </div>
+
+<script type="text/javascript" src="/js/libs/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+	
+	$(function() {
+		$( "#FlightStart" ).datepicker();
+	});
+	
+	$(function() {
+		$("#FlightDashboardForm").validate();
+	});
+	
+	function filterFlighttypes(val)
+	{
+		alert(val);
+	}
+
+</script>
