@@ -41,7 +41,8 @@ class FlightsController extends AppController {
 	function add()
 	{
 		if(!empty($this->data))
-		{
+		{	
+		
 			$this->data['Flight']['duration'] = ($this->data['Flight']['duration_h']*60) + $this->data['Flight']['duration_m'];
 			unset($this->data['Flight']['duration_h']);
 			unset($this->data['Flight']['duration_m']);
@@ -55,6 +56,12 @@ class FlightsController extends AppController {
 			unset($this->data['Flight']['time']);
 			
 			$this->Flight->save($this->data);
+			
+			foreach($_FILES['attachments']['tmp_name'] as $i => $tmpname)
+			{
+				$this->Flight->Attachment->upload($this->Flight->id,$tmpname,$_FILES['attachments']['name'][$i],$_FILES['attachments']['size'][$i]);
+			}
+			
 			unset($this->Flight->id);
 			$this->data = array();
 		}

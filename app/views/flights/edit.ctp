@@ -1,10 +1,14 @@
+<script type="text/javascript" src="/js/libs/jquery.multifile.min.js"></script>
+
 <div class="clear" style="height:15px;"></div>
+<?php
+echo $form->create('Flight',array('action'=>'edit','type'=>'file'));
+?>
 <div class="grid_5">
 <div class="box">
 <h2>Properties</h2>
 <?php
 
-echo $form->create('Flight',array('action'=>'edit'));
 echo '<fieldset style="margin-top:10px;">';
 ?>
 

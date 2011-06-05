@@ -1,10 +1,14 @@
+<script type="text/javascript" src="/js/libs/jquery.multifile.min.js"></script>
+
 <div class="clear" style="height:15px;"></div>
+<?php
+echo $form->create('Flight',array('action'=>'add','type'=>'file'));
+?>
+
 <div class="grid_5">
 <div class="box">
 <h2>Properties</h2>
 <?php
-
-echo $form->create('Flight',array('action'=>'add'));
 echo '<fieldset style="margin-top:10px;">';
 ?>
 
@@ -46,10 +50,18 @@ echo '</fieldset>';
 <?php
 
 echo '<fieldset style="margin-top:10px;">';
+echo '<p>';
 echo $form->input('notes',array('div'=>false,'style'=>'width:490px;'));
+echo '</p>';
+echo '</fieldset>';
+echo '<h3 style="font-size:13px;">Attachments</h3>';
+echo '<fieldset style="margin-top:10px;">';
+echo '<p>';
+echo $form->input('attachments',array('type'=>'file','class'=>'multi','name'=>'attachments[]'));
+echo '</p>';
 echo '</fieldset>';
 echo '</form>';
-?>attachments...
+?>
 </div>
 </div>
 
