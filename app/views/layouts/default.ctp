@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Fluid 960 Grid System | 12-column Grid</title>
+		<title>Glidelog</title>
 		<link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="/css/text.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="/css/grid.css" media="screen" />
