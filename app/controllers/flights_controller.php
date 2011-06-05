@@ -25,7 +25,7 @@ class FlightsController extends AppController {
 			$this->data = array();
 		}
 		
-		$this->set('flights',$this->Flight->find('all',array('order'=>'Flight.start DESC','limit'=>10)));
+		$this->set('flights',$this->Flight->find('all',array('order'=>'Flight.start DESC','limit'=>12)));
 
 		$this->set('gliders',$this->Flight->Glider->getList());
 		$this->set('flighttypes',$this->Flight->Flighttype->find('list'));
@@ -89,11 +89,13 @@ class FlightsController extends AppController {
 			
 			$this->Flight->save($this->data);
 			unset($this->Flight->id);
-			$this->data = array();
+			
+			$this->redirect($this->data['Flight']['from']);
 		}
 		
 		$this->Flight->id = $id;
 		$this->data = $this->Flight->read();
+		$this->set('from',$_SERVER['HTTP_REFERER']);
 		$this->set('gliders',$this->Flight->Glider->getList());
 		$this->set('flighttypes',$this->Flight->Flighttype->find('list'));
 		$this->set('locations',$this->Flight->Location->find('list'));

@@ -3,6 +3,8 @@
 <div class="clear" style="height:15px;"></div>
 <?php
 echo $form->create('Flight',array('action'=>'edit','type'=>'file'));
+echo $form->hidden('id',array('value'=>$this->data['Flight']['id']));
+echo $form->hidden('from',array('value'=>$from));
 ?>
 <div class="grid_5">
 <div class="box">

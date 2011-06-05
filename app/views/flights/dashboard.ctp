@@ -11,7 +11,7 @@
 	<th>time</th>
 	<th>duration</th>
 	<th>glider</th>
-	<th>&nbsp;</th>
+	<th>type</th>
 	<th>notes</th>
 	<th>&nbsp;</th>
 </tr>
@@ -41,6 +41,7 @@ foreach($flights as $i => $flight)
 			echo $flight['Glider']['reg'].' - '.$flight['Glider']['type'];
 		echo '</td>';
 		echo '<td style="text-align:right;">';
+			echo $flight['Startmethod']['short'].' ';
 			echo $html->image('icon/flighttype_'.Inflector::slug(strtolower($flight['Flighttype']['title'])).'.png',array('alt'=>$flight['Flighttype']['title'],'title'=>$flight['Flighttype']['title'],'style'=>'top:1px;'));
 		echo '</td>';
 		echo '<td>';

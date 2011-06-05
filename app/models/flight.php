@@ -3,7 +3,7 @@
 class Flight extends AppModel
 {
 	var $name = 'Flight';
-	var $belongsTo = array('Glider','Flighttype','Location');
+	var $belongsTo = array('Glider','Flighttype','Location','Startmethod');
 	var $hasMany = array('Attachment');
 	
 	function getStatistics()

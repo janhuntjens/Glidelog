@@ -47,6 +47,7 @@ foreach($flights as $i => $flight)
 			echo $flight['Glider']['reg'].' - '.$flight['Glider']['type'];
 		echo '</td>';
 		echo '<td style="text-align:left;">';
+		echo $flight['Startmethod']['title'].' | ';
 			echo $html->image('icon/flighttype_'.Inflector::slug(strtolower($flight['Flighttype']['title'])).'.png',array('alt'=>$flight['Flighttype']['title'],'title'=>$flight['Flighttype']['title'],'style'=>'top:1px;'));
 			echo ' '.$flight['Flighttype']['title'];
 		echo '</td>';
@@ -59,7 +60,7 @@ foreach($flights as $i => $flight)
 		echo '<td style="width:20px;">';
 			if(count($flight['Attachment'])>0)
 			{
-				echo $html->image('icon/basicset/briefcase_16.png',array('id'=>'opener'.$flight['Flight']['id']));
+				echo $html->link($html->image('icon/basicset/briefcase_16.png',array('id'=>'opener'.$flight['Flight']['id'])),'#',array('escape'=>false));
 			
 				echo '<div id="dialog'.$flight['Flight']['id'].'" title="Attachments">';
 				echo '<ul style="list-style-type:none;">';
