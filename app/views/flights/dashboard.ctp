@@ -98,7 +98,7 @@ echo '<p>';
 echo $form->input('location_id',array('div'=>false,'type'=>'select','options'=>$locations));
 echo '</p>';
 echo '<p>';
-echo $form->input('startmethod_id',array('div'=>false,'type'=>'select','options'=>$startmethods));
+echo $form->input('startmethod_id',array('label'=>'Start method','div'=>false,'type'=>'select','options'=>$startmethods));
 echo '</p>';
 echo '<p>';
 echo $form->input('notes',array('div'=>false));

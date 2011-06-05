@@ -78,6 +78,7 @@ class FlightsController extends AppController {
 		$this->set('gliders',$this->Flight->Glider->getList());
 		$this->set('flighttypes',$this->Flight->Flighttype->find('list'));
 		$this->set('locations',$this->Flight->Location->find('list'));
+		$this->set('startmethods',$this->Flight->Startmethod->find('list'));
 	}
 	
 	function edit($id)
@@ -108,6 +109,7 @@ class FlightsController extends AppController {
 		$this->set('gliders',$this->Flight->Glider->getList());
 		$this->set('flighttypes',$this->Flight->Flighttype->find('list'));
 		$this->set('locations',$this->Flight->Location->find('list'));
+		$this->set('startmethods',$this->Flight->Startmethod->find('list'));
 	}
 	
 	function statistics()

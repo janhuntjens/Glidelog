@@ -35,6 +35,9 @@ echo '<p>';
 echo $form->input('location_id',array('div'=>false,'type'=>'select','options'=>$locations));
 echo '</p>';
 echo '<p>';
+echo $form->input('startmethod_id',array('div'=>false,'type'=>'select','options'=>$startmethods));
+echo '</p>';
+echo '<p>';
 echo $form->submit('save flight',array('div'=>false,'style'=>'width:auto;float:right;'));
 echo '</p>';
 
@@ -45,7 +48,7 @@ echo '</fieldset>';
 </div>
 
 <div class="grid_7">
-<div class="box"  style="height:331px;">
+<div class="box"  style="height:381px;">
 <h2>Other</h2>
 <?php
 

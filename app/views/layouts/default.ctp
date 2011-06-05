@@ -59,13 +59,16 @@
 						<a href="#"><?= $html->image('icon/basicset/gear_16.png'); ?> Manage</a>
 						<ul>
 							<li>
-								<a href="#">Gliders</a>
+								<a href="/gliders/">Gliders</a>
 							</li>
 							<li>
-								<a href="#">Locations</a>
+								<a href="/locations/">Locations</a>
 							</li>
 							<li>
-								<a href="#">Flight types</a>
+								<a href="/flighttypes/">Flight types</a>
+							</li>
+							<li>
+								<a href="/startmethods/">Start methods</a>
 							</li>
 						</ul>
 					</li>
