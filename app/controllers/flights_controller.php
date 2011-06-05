@@ -3,6 +3,7 @@
 class FlightsController extends AppController {
 
 	var $name = 'Flights';
+	var $components = array("RequestHandler");
 	
 	function dashboard()
 	{
@@ -30,7 +31,15 @@ class FlightsController extends AppController {
 		$this->set('gliders',$this->Flight->Glider->getList());
 		$this->set('flighttypes',$this->Flight->Flighttype->find('list'));
 		$this->set('locations',$this->Flight->Location->find('list'));
+		$this->set('startmethods',$this->Flight->Startmethod->find('list'));
 		
+		if($this->RequestHandler->isMobile())
+		{
+			$this->layout = 'mobile';
+			$this->render('dashboard_mobile');
+		} else {
+			$this->render();
+		}
 	}
 	
 	function index()
