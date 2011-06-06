@@ -30,8 +30,8 @@ class Flight extends AppModel
 				$stats['Gliders'][$flight['Glider']['reg'].' - '.$flight['Glider']['type']]['duration'] = $stats['Gliders'][$flight['Glider']['reg'].' - '.$flight['Glider']['type']]['duration']+$flight['Flight']['duration'];
 				
 				//GLIDERTYPES
-				$stats['Glidertypes'][$flight['Glider']['type']]['numbers'] = $stats['Gliders'][$flight['Glider']['type']]['numbers']+1;
-				$stats['Glidertypes'][$flight['Glider']['type']]['duration'] = $stats['Gliders'][$flight['Glider']['type']]['duration']+$flight['Flight']['duration'];
+				$stats['Glidertypes'][$flight['Glider']['type']]['numbers'] = $stats['Glidertypes'][$flight['Glider']['type']]['numbers']+1;
+				$stats['Glidertypes'][$flight['Glider']['type']]['duration'] = $stats['Glidertypes'][$flight['Glider']['type']]['duration']+$flight['Flight']['duration'];
 				
 				//MONTHS
 				$stats['Months'][date('Y-m',strtotime($flight['Flight']['start']))]['numbers'] = $stats['Months'][date('Y-m',strtotime($flight['Flight']['start']))]['numbers'] + 1;
